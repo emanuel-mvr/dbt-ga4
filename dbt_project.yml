@@ -18,3 +18,10 @@ models:
     +materialized: view
     marts:
       +materialized: table
+
+vars:
+  ga4:
+    project: "mauibath"
+    dataset: "analytics_275994517"
+    start_date: "20231210" # Earliest date to load
+    static_incremental_days: 3 # Number of days to scan and reprocess on each run  
